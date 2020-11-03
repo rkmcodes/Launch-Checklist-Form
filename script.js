@@ -34,10 +34,11 @@ window.addEventListener("load", function() {
 
       if (pilotInput.value === "" || copilotInput.value === "" || fuelInputTest.value === "" || cargoMassInputTest.value === "") {
          alert("All fields are required!");
-         //event.preventDefault();
+         event.preventDefault();
          
       } else if (isNaN(pilotTest) === false || isNaN(copilotTest) === false || isNaN(fuelInputTest) || isNaN(cargoMassInputTest)) {
          alert("Invalid Input!");
+         event.preventDefault();
         
       }
 
